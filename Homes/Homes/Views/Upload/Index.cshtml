@@ -1,0 +1,267 @@
+﻿@*<div style=" min-height:700px; border:1px solid lightgray; margin:30px;">
+        <h4 style="margin:30px;">Upload view </h4>
+    </div>*@
+
+<div class="row" id="upload">
+
+    <div id="imgUplad" class="col-md-6">
+        <h4 style="margin:30px;">Upload view </h4>
+        <div class="_main">
+
+            <div class="_screen">
+                <img src="~/Image/captureMap.png" alt="" />
+            </div>
+
+            <div class="_screen_Nav">
+
+                <input id="File1" type="file" placeholder="imges" />
+                <input id="Text1" type="button" value="add" />
+            </div>
+
+            <div class="details">
+
+                <table>
+                    <tr>
+                        <td><h4>Description</h4></td>
+                        <td><hr /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <br />
+
+
+                            <p>
+                                <input id="Text1" type="text" />
+                                <input id="Text1" type="button" value="add" />
+
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Contact </h4></td>
+                        <td><hr /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+
+                            <table>
+                                <tr>
+
+                                    <td>
+                                        <h4 style="color:green;">
+                                            <input id="Text1" type="text" placeholder="phone number" />
+                                            <input id="Text1" type="button" value="add" />
+                                        </h4>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>address</h4></td>
+                        <td><hr /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+
+                            <table>
+                                <tr>
+
+                                    <td>
+
+                                        <input id="Text1" type="text" placeholder="phone number" />
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+
+                                        <input id="Text1" type="text" placeholder="phone number" />
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+
+                                        <input id="Text1" type="text" placeholder="phone number" />
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="Text1" type="button" value="add" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <div id="description" class="col-md-6">
+        <h4 style="margin:30px;">review view</h4>
+        <div class="_main">
+
+            <div class="_screen">
+                <img src="~/Image/captureMap.png" alt="" />
+            </div>
+
+            <div class="_screen_Nav">
+
+                <img src="~/Image/capture22.png" alt="" style="height:60px;width:60px;" />   <img src="~/Image/capture2.png" alt="" style="height:60px;width:60px;" />
+                <img src="~/Image/capture44.png" alt="" style="height:60px;width:60px;" />   <img src="~/Image/capturee.png" alt="" style="height:60px;width:60px;" />
+                <img src="~/Image/capture1qqq.png" alt="" style="height:60px;width:60px;" />   <img src="~/Image/capture1.png" alt="" style="height:60px;width:60px;" />
+                <img src="~/Image/capture25.png" alt="" style="height:60px;width:60px;" /> <img src="~/Image/capture23.png" alt="" style="height:60px;width:60px;" />
+            </div>
+
+            <div class="details">
+                <h3>Details</h3>
+                <table>
+                    <tr>
+                        <td><h4>Description</h4></td>
+                        <td><hr /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <br />
+                            @for (var i = 0; i < 3; i++)
+                            {
+                                <p>
+                                    this is locatiod in addwethtermod this iddwethtermod
+                                    sleiendlso slsmaisooed this is locatiod in addwethtermod
+                                </p>
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Contact </h4></td>
+                        <td><hr /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+
+                            <table>
+                                <tr>
+                                    <td> <h4>Phone</h4>  </td>
+                                    <td>
+                                        <h4 style="color:green;">
+                                            :  333 333 3333
+
+                                        </h4>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</div>
+
+<style>
+    #upload {
+        border: 1px solid lightgray;
+        min-height: 800px;
+        margin-top: 100px;
+        position: relative;
+    }
+
+    #imgUplad, #description {
+        height: 100%;
+        margin: 0 auto;
+        border: 1px solid lightgray;
+    }
+</style>
+<style>
+    div p small {
+        font-family: Calibri;
+    }
+
+    h4 {
+    }
+
+    li {
+        list-style: none;
+        display: inline;
+    }
+
+    p {
+        font-family: Calibri;
+        font-size: medium;
+    }
+
+    ._main {
+        border: 1px solid #e8f0f0;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .details {
+        border: 1px solid lightgray;
+        background-color: white;
+        height: auto;
+        width: 100%;
+        margin: 0auto;
+        margin-top: 3px;
+        padding: 20px;
+    }
+
+        .details hr {
+            margin: 5px;
+        }
+
+        .details table tr td {
+            padding: 0px;
+        }
+
+    ._screen {
+        border: 1px solid lightgray;
+        background-color: white;
+        height: auto;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+        ._screen img {
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 5px;
+            position: relative;
+        }
+
+    ._screen_Nav {
+        border: 1px solid lightgray;
+        background-color: white;
+        height: 80px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 3px;
+        padding: 10px;
+    }
+</style>

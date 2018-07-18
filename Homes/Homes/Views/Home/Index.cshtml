@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div style="height:50px;margin-top:10px; margin-bottom:50px; border-radius:8px;">
+
+</div>
+
+
+<div class="row" style="padding:0px; border:1px solid #e8f0f0; padding:0px;">
+
+    <div class="col-md-4 col-sm-4" style="border:1px solid #e8f0f0;height:auto; padding:0px; ">
+        @*@{Html.RenderPartial("_menu");}*@
+        @{Html.RenderPartial("_searchView");}
+        @{Html.RenderAction("Search");}
+    </div>
+    <div class="col-md-8 col-sm-8" style="border:1px; height:auto;padding:0px; ">
+      
+        @{Html.RenderPartial("_main");}
+
+
+    </div>
+</div>
+

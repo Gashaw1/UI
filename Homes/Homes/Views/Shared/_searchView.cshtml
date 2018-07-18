@@ -1,0 +1,38 @@
+﻿@model Homes.Models.Addresse
+
+<div id="searchContainer">
+    @using (Html.BeginForm())
+    {
+        <input id="txtSearch" type="text" name="q" placeholder="type: zip, city or state" />
+       
+        <input id="btnSearch" type="submit" value="sumnit" />
+    }
+
+</div>
+<style>
+    #searchContainer {
+        min-height: 60px;
+        width: 100%;
+        border: 1px solid lightgray;
+        background-color: white;
+        margin-bottom: 5px;
+    }
+
+    input {
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    #txtSearch {
+        width: 90%;
+        border: none;
+        padding: 20px;
+    }
+
+    #btnSearch {
+        width: 25%;
+        border: none;
+        background-color: lightgreen;
+        color: white;
+    }
+</style>
